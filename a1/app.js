@@ -3,11 +3,11 @@
   .controller("myController",myControllerM);
   myControllerM.$inject=['$scope'];
   function myControllerM($scope) {
-
+    $scope.inp="";
     $scope.er="";
     $scope.check=function () {
       $scope.er="";
-      if($scope.inp="")
+      if($scope.inp==="")
         $scope.er="Please enter data first";
       else{
         var words = $scope.inp.split(",");
