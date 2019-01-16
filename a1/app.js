@@ -14,7 +14,6 @@
         $scope.er="Enjoy!";
 
       }
-      console.log(words);
     };
   }
 })()
