@@ -7,13 +7,18 @@
     $scope.er="";
     $scope.check=function () {
       $scope.er="";
-      var words = $scope.inp.split(",");
-      if(words.length>3)
-        $scope.er="Too much!";
-      else {
-        $scope.er="Enjoy!";
+      if($scope.inp="")
+        $scope.er="Please enter data first";
+      else{
+        var words = $scope.inp.split(",");
+        if(words.length>3)
+            $scope.er="Too much!";
+        else {
+          $scope.er="Enjoy!";
 
+        }
       }
+
     };
   }
 })()
