@@ -30,7 +30,7 @@
             }
           })
           .catch(function(error) {
-        console.log("ni ho paega");
+        console.log("Some Thing Went Worng!");
       });
 
     };
@@ -46,7 +46,6 @@
         mehtod:"GET",
         url:("https://davids-restaurant.herokuapp.com/menu_items.json")
       });
-      console.log(result);
       return result;
     };
 
