@@ -11,6 +11,8 @@
 <body ng-app="menuApp">
    <div class="container" ng-controller="myController as a">
     <h1>Narrow Down Your Chinese Menu Choice</h1>
+    <div class="d-flex">
+
 
     <div class="form-group">
       <input type="text" placeholder="search term" class="form-control" ng-model="a.inp">
@@ -18,8 +20,10 @@
     <div class="form-group narrow-button">
       <button class="btn btn-primary" ng-click="a.fetch()">Narrow It Down For Me!</button>
     </div>
+        </div>
+    <br>
     <div class="d-inline ">
-
+      <h1>{{a.error}}</h1>
 
     <menu-item></menu-item>
     </div>
